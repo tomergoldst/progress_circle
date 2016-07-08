@@ -1,4 +1,4 @@
-# progress_circle
+# progress circle
 Progress Circle View for Andoid
 
 <img src="https://cloud.githubusercontent.com/assets/19874536/16689892/c2d785ee-452d-11e6-8828-2ee197c931ef.gif" width="150 height="150"/>
