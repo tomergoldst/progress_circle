@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textColor" format="color" />
+    <attr name="progressColor" format="color" />
+    <attr name="ProgressWidth" format="dimension" />
+    <attr name="outlineColor" format="color" />
+    <attr name="outlineWidth" format="dimension" />
+    <attr name="maxProgressValue" format="integer" />
+    <attr name="maxAnimationDuration" format="integer" />
+    <attr name="minAnimationDuration" format="integer" />
+
+    <declare-styleable name="ProgressCircle">
+        <attr name="textColor" />
+        <attr name="progressColor" />
+        <attr name="ProgressWidth" />
+        <attr name="outlineColor" />
+        <attr name="outlineWidth" />
+        <attr name="maxProgressValue" />
+        <attr name="maxAnimationDuration" />
+        <attr name="minAnimationDuration" />
+    </declare-styleable>
+
+</resources>
