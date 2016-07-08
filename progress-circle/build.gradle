@@ -5,13 +5,13 @@ ext {
     bintrayName = 'progress-circle-indicator'
 
     publishedGroupId = 'com.tomergoldst.android'
-    libraryName = 'ProgressCircleIndicator'
+    libraryName = 'ProgressCircle'
     artifact = 'progress-circle'
 
     libraryDescription = 'Progress Circle View for Android'
 
-    siteUrl = 'https://github.com/tomergoldst/progress-circle'
-    gitUrl = 'https://github.com/tomergoldst/progress-circle.git'
+    siteUrl = 'https://github.com/tomergoldst/progress_circle'
+    gitUrl = 'https://github.com/tomergoldst/progress_circle.git'
 
     libraryVersion = '1.0.0'
 
