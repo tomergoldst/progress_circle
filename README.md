@@ -8,15 +8,21 @@ Progress Circle View for Andoid
 
 ##Instruction
 
+Add a dependency to your app build.gradle
+```groovy
+dependencies {
+    compile 'com.tomergoldst.android:progress-circle:1.0.0'   
+}
+```
+
 Add 'ProgressCircle' view to your layout
 ```xml
-<com.tomergoldst.android.views.progresscircle.ProgressCircle
+<com.tomergoldst.progress_circle.ProgressCircle
         android:id="@+id/circle_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="32dp"
-        app:progressColor="@color/colorPrimary"
-        app:textColor="@color/colorPrimary"
+        app:progressColor="?attr/colorPrimary"
+        app:textColor="?attr/colorPrimary"
         app:outlineWidth="16dp"
         app:ProgressWidth="10dp"/>
 ```
@@ -40,7 +46,6 @@ Set progress from code
 mCircleProgress = (ProgressCircle) findViewById(R.id.circle_progress);
 mCircleProgress.setProgress(90);
 ```
-
 
 See the demo app for more information
 
