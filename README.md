@@ -1,10 +1,10 @@
 # progress_circle
 Progress Circle View for Andoid
 
-<img src="" width="150 height="150"/>
-<img src="" width="150 height="150"/>
-<img src="" width="150 height="150"/>
-<img src="" width="150 height="150"/>
+<img src="https://cloud.githubusercontent.com/assets/19874536/16689892/c2d785ee-452d-11e6-8828-2ee197c931ef.gif" width="150 height="150"/>
+<img src="https://cloud.githubusercontent.com/assets/19874536/16689732/02e8a902-452d-11e6-9fbf-ea4d0095f208.png" width="150 height="150"/>
+<img src="https://cloud.githubusercontent.com/assets/19874536/16689731/02e55e64-452d-11e6-90e8-f7887625fb2b.png" width="150 height="150"/>
+<img src="https://cloud.githubusercontent.com/assets/19874536/16689730/02e3996c-452d-11e6-802e-bbe4eb8d596e.png" width="150 height="150"/>
 
 ##Instruction
 
@@ -21,7 +21,7 @@ Add 'ProgressCircle' view to your layout
         app:ProgressWidth="10dp"/>
 ```
 
-Adjust attributes to fit your needs
+Adjust attributes to fit your needs, below is the list of attributes available
 ```xml
 <declare-styleable name="ProgressCircle">
         <attr name="textColor" />
