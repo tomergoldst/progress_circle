@@ -1,9 +1,6 @@
 # progress_circle
 Progress Circle View for Andoid
 
-# progress-circle
-progress circle view
-
 <img src="" width="150 height="150"/>
 <img src="" width="150 height="150"/>
 <img src="" width="150 height="150"/>
