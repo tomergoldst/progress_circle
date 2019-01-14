@@ -44,13 +44,12 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mProgressCircle = findViewById(R.id.circle_progress);
 
-        mProgressCircle = (ProgressCircle) findViewById(R.id.circle_progress);
-
-        SeekBar seekBarCurrentProgress = (SeekBar) findViewById(R.id.seek_bar_current_progress);
-        SeekBar seekBarProgressWidth = (SeekBar) findViewById(R.id.seek_bar_progress_width);
-        SeekBar seekBarOutlineWidth = (SeekBar) findViewById(R.id.seek_bar_outline_width);
-        SeekBar seekBarProgressViewSize = (SeekBar) findViewById(R.id.seek_bar_progress_view_size);
+        SeekBar seekBarCurrentProgress = findViewById(R.id.seek_bar_current_progress);
+        SeekBar seekBarProgressWidth = findViewById(R.id.seek_bar_progress_width);
+        SeekBar seekBarOutlineWidth = findViewById(R.id.seek_bar_outline_width);
+        SeekBar seekBarProgressViewSize = findViewById(R.id.seek_bar_progress_view_size);
 
         seekBarCurrentProgress.setOnSeekBarChangeListener(this);
         seekBarProgressWidth.setOnSeekBarChangeListener(this);
@@ -115,9 +114,7 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.seek_bar_progress_view_size:
                 int pPx = dpToPx(i * 5);
-                LinearLayout.LayoutParams params =
-                        new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                                ViewGroup.LayoutParams.WRAP_CONTENT, 1);
+                LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mProgressCircle.getLayoutParams();
                 params.setMargins(pPx, pPx, pPx, pPx);
                 mProgressCircle.setLayoutParams(params);
                 break;
