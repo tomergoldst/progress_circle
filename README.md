@@ -1,22 +1,25 @@
 # progress circle
 Progress Circle View for Andoid
 
-<img src="https://cloud.githubusercontent.com/assets/19874536/16689892/c2d785ee-452d-11e6-8828-2ee197c931ef.gif" width="150 height="150"/>
-<img src="https://cloud.githubusercontent.com/assets/19874536/16689732/02e8a902-452d-11e6-9fbf-ea4d0095f208.png" width="150 height="150"/>
-<img src="https://cloud.githubusercontent.com/assets/19874536/16689731/02e55e64-452d-11e6-90e8-f7887625fb2b.png" width="150 height="150"/>
-<img src="https://cloud.githubusercontent.com/assets/19874536/16689730/02e3996c-452d-11e6-802e-bbe4eb8d596e.png" width="150 height="150"/>
+<img src="https://cloud.githubusercontent.com/assets/19874536/16689892/c2d785ee-452d-11e6-8828-2ee197c931ef.gif" width="150" height="250"/><img src="https://cloud.githubusercontent.com/assets/19874536/16689732/02e8a902-452d-11e6-9fbf-ea4d0095f208.png" width="150" height="250"/><img src="https://cloud.githubusercontent.com/assets/19874536/16689731/02e55e64-452d-11e6-90e8-f7887625fb2b.png" width="150" height="250"/><img src="https://cloud.githubusercontent.com/assets/19874536/16689730/02e3996c-452d-11e6-802e-bbe4eb8d596e.png" width="150" height="250"/>
 
 ##Instruction
 
+Add a dependency to your app build.gradle
+```groovy
+dependencies {
+    compile 'com.tomergoldst.android:progress-circle:1.0.0'   
+}
+```
+
 Add 'ProgressCircle' view to your layout
 ```xml
-<com.tomergoldst.android.views.progresscircle.ProgressCircle
+<com.tomergoldst.progress_circle.ProgressCircle
         android:id="@+id/circle_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="32dp"
-        app:progressColor="@color/colorPrimary"
-        app:textColor="@color/colorPrimary"
+        app:progressColor="?attr/colorPrimary"
+        app:textColor="?attr/colorPrimary"
         app:outlineWidth="16dp"
         app:ProgressWidth="10dp"/>
 ```
@@ -40,7 +43,6 @@ Set progress from code
 mCircleProgress = (ProgressCircle) findViewById(R.id.circle_progress);
 mCircleProgress.setProgress(90);
 ```
-
 
 See the demo app for more information
 
