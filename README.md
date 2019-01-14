@@ -8,7 +8,7 @@ Progress Circle View for Andoid
 Add a dependency to your app build.gradle
 ```groovy
 dependencies {
-    compile 'com.tomergoldst.android:progress-circle:1.0.0'   
+    compile 'com.tomergoldst.android:progress-circle:1.0.1'
 }
 ```
 
