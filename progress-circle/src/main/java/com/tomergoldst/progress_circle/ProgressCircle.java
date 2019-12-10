@@ -30,10 +30,13 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
+import androidx.annotation.Keep;
+
 /**
  * Created by Tomer on 19/05/2016.
  *
  */
+@Keep
 public class ProgressCircle extends View {
 
     // Constants
