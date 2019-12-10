@@ -31,6 +31,7 @@ import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
 import androidx.annotation.Keep;
+import androidx.annotation.NonNull;
 
 /**
  * Created by Tomer on 19/05/2016.
@@ -57,7 +58,6 @@ public class ProgressCircle extends View {
     private float mCenterX;
     private float mCenterY;
     private float mRadius;
-    private ValueAnimator mValueAnimator;
     private float mXPadBetweenTexts;
 
     // Style variables
@@ -247,8 +247,8 @@ public class ProgressCircle extends View {
         mPercentTextPaint.getTextBounds(percentString, 0, percentString.length(), mPercentTextSizeRect);
 
         // Calculate text position
-        float startTextXPos = mCenterX - (mTextSizeRect.width() / 2) - (mPercentTextSizeRect.width() / 2) - (mXPadBetweenTexts / 2);
-        float startTextYPos = mCenterY + (mTextSizeRect.height() / 2);
+        float startTextXPos = mCenterX - (mTextSizeRect.width() / 2f) - (mPercentTextSizeRect.width() / 2f) - (mXPadBetweenTexts / 2);
+        float startTextYPos = mCenterY + (mTextSizeRect.height() / 2f);
 
         // draw text
         canvas.drawText(valueString, startTextXPos, startTextYPos, mTextPaint);
@@ -283,8 +283,8 @@ public class ProgressCircle extends View {
         final float distance = Math.abs(value - mProgress);
 
         // animate from current progress to new progress
-        mValueAnimator = ValueAnimator.ofFloat(mProgress, value);
-        mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+        ValueAnimator valueAnimator = ValueAnimator.ofFloat(mProgress, value);
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 mProgress = (float) animation.getAnimatedValue();
@@ -297,12 +297,12 @@ public class ProgressCircle extends View {
         float durationFraction = distance / (float) mMaxProgressValue;
         long duration = (long) (mMinAnimationDuration +
                 ((mMaxAnimationDuration - mMinAnimationDuration) * durationFraction));
-        mValueAnimator.setDuration(duration);
-        mValueAnimator.setStartDelay(startDelay);
+        valueAnimator.setDuration(duration);
+        valueAnimator.setStartDelay(startDelay);
 
-        mValueAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
+        valueAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
 
-        mValueAnimator.start();
+        valueAnimator.start();
 
     }
 
@@ -400,6 +400,7 @@ public class ProgressCircle extends View {
             out.writeValue(mProgress);
         }
 
+        @NonNull
         @Override
         public String toString() {
             return "ProgressCircle.SavedState{"
@@ -437,6 +438,5 @@ public class ProgressCircle extends View {
         mProgress = ss.mProgress;
         requestLayout();
     }
-
 
 }

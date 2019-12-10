@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements
             }
         };
 
-        Button startAnimationBtn = (Button) findViewById(R.id.button_start_animate);
+        Button startAnimationBtn = findViewById(R.id.button_start_animate);
         startAnimationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements
             }
         });
 
-        Button stopAnimationBtn = (Button) findViewById(R.id.button_stop_animate);
+        Button stopAnimationBtn = findViewById(R.id.button_stop_animate);
         stopAnimationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
