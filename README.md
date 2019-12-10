@@ -3,7 +3,7 @@ Progress Circle View for Andoid
 
 <img src="https://cloud.githubusercontent.com/assets/19874536/16689892/c2d785ee-452d-11e6-8828-2ee197c931ef.gif" width="150" height="250"/><img src="https://cloud.githubusercontent.com/assets/19874536/16689732/02e8a902-452d-11e6-9fbf-ea4d0095f208.png" width="150" height="250"/><img src="https://cloud.githubusercontent.com/assets/19874536/16689731/02e55e64-452d-11e6-90e8-f7887625fb2b.png" width="150" height="250"/><img src="https://cloud.githubusercontent.com/assets/19874536/16689730/02e3996c-452d-11e6-802e-bbe4eb8d596e.png" width="150" height="250"/>
 
-## Instruction
+## Instructions
 
 Add a dependency to your app build.gradle
 ```groovy
