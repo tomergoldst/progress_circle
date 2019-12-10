@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/tomergoldst/progress_circle'
     gitUrl = 'https://github.com/tomergoldst/progress_circle.git'
 
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
 
     developerId = 'tomergoldst'
     developerName = 'Tomer Goldstein'
@@ -30,8 +30,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
     }
     buildTypes {
         release {
